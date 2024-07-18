@@ -20,6 +20,9 @@ body{
   align-items:center;
   justify-content:center;
 }
+b{
+  text-shadow:2px 2px 8px #000;
+}
 input{
   height:20vw;
   min-width:64vw;

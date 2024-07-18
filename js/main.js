@@ -23,7 +23,8 @@ Array.from(buttons).forEach((button)=>{
    output.value = string;
   }
    else if(e.target.innerHTML =="root"){
-   string = Math.sqrt(string);
+   let s = prompt("Enter the value of that's root value you wanted")
+   string = string + Math.sqrt(s);
    output.value = string;
   }
    else if(e.target.innerHTML =="^"){
