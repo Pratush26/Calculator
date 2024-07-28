@@ -2,7 +2,7 @@
 const p = Math.PI;
 let string = ""
 let output = document.getElementById("out");
-let buttons = document.querySelectorAll('.btn')
+let buttons = document.querySelectorAll('.btn');
 
 Array.from(buttons).forEach((button)=>{
   button.addEventListener("click",(e)=>{
@@ -14,7 +14,7 @@ Array.from(buttons).forEach((button)=>{
    string = "";
    output.value = string;
   }
-   else if(e.target.innerHTML =="pi"){
+  else if(e.target.innerHTML =="pi"){
    string = string + p;
    output.value = string;
   }
@@ -42,3 +42,9 @@ Array.from(buttons).forEach((button)=>{
     }
   })
 })
+
+//darkmode
+function DarkMode(){
+  let b = document.body;
+  b.classList.toggle("body2");
+}

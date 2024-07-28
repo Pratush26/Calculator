@@ -2,7 +2,7 @@
   --fcolor:#222831;
   --seccolor:#2D4059;
   --thcolor:#FF5722;
-  --focolor:#EEEEEE;
+  --focolor:#EEE;
   --ficolor:white;
 }
 *{
@@ -45,6 +45,12 @@ button{
   font-weight:800;
   background-color:var(--seccolor);
   box-shadow:1px 1px 5px #111;
+}
+button:hover{
+  background-color:var(--thcolor);
+}
+.body2{
+  background-color:#aaa;
 }
 @media screen and (min-width:450px){
   input{
