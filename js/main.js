@@ -7,8 +7,13 @@ let buttons = document.querySelectorAll('.btn');
 Array.from(buttons).forEach((button)=>{
   button.addEventListener("click",(e)=>{
   if(e.target.innerHTML =="="){
-    string = eval(string);
-    output.value = string;
+    try{
+     string = eval(string);
+     output.value = string;
+    }
+    catch(err){
+     output.value = "Error occurred" 
+    }
   }
   else if(e.target.innerHTML =="AC"){
    string = "";
