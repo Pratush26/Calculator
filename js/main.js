@@ -16,12 +16,10 @@ Array.from(buttons).forEach((button)=>{
     }
   }
   else if(e.target.innerHTML =="AC"){
-   string = "";
-   output.value = string;
+   output.value = string = "";
   }
   else if(e.target.innerHTML =="pi"){
-   string = string + p;
-   output.value = string;
+   output.value = string += p;
   }
    else if(e.target.innerHTML =="DEL"){
    string = string.substring(0,string.length-1);
@@ -29,8 +27,7 @@ Array.from(buttons).forEach((button)=>{
   }
    else if(e.target.innerHTML =="root"){
    let s = prompt("Enter the value of that's root value you wanted")
-   string = string + Math.sqrt(s);
-   output.value = string;
+   output.value = string += Math.sqrt(s);
   }
    else if(e.target.innerHTML =="^"){
    let b = prompt("Enter the value of power: ")
@@ -38,12 +35,10 @@ Array.from(buttons).forEach((button)=>{
    return Math.pow(a,b);
   }
    re = math(string,b);
-   console.log(re)
    output.value = re;
   }
   else{
-    string = string + e.target.innerHTML;
-    output.value = string;
+    output.value = string += e.target.innerHTML;
     }
   })
 })
